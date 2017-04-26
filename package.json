@@ -1,0 +1,32 @@
+{
+  "name": "redux-noob",
+  "version": "0.0.1",
+  "description": "simple redux wrapper",
+  "author": "Peerapat S.",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "homepage": "https://github.com/gigapixel/redux-noob#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gigapixel/redux-noob.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gigapixel/redux-noob/issues"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "~6.24.1",
+    "babel-core": "~6.24.1",
+    "babel-preset-latest": "~6.24.1",
+    "chai": "~3.5.0",
+    "mocha": "~3.3.0"
+  },
+  "scripts": {
+    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib",
+    "test": "mocha"
+  }
+}
